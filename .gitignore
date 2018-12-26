@@ -2,6 +2,8 @@ data/
 DATA - Jenkins Monthly Disposition Reports.txt
 DATA - Jenkins Monthly Disposition Reports.txt.zip
 fulldata.csv
+cleaned_data.csv
+.RData
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
