@@ -14,3 +14,13 @@ colnames(raw) <- raw[1, ] # create column names from the first row of the data f
 raw <- raw[-1, ] # drop the column name row
 raw <- raw[-1, ] # drop the dash row
 
+head(raw)
+
+raw$fda <- as.Date(raw$fda, format = "%Y%m%d")
+raw$nda <- as.Date(raw$nda, format = "%Y%m%d")
+raw$def_dob <- as.Date(raw$def_dob, format = "%Y%m%d")
+raw$dispdt <- as.Date(raw$dispdt, format = "%Y%m%d")
+
+
+
+write.csv(raw, file = "/Users/Lara/Documents/Repository/harriscriminalcourt/data/parsed.csv", row.names= FALSE)
